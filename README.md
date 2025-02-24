@@ -1,4 +1,4 @@
-# ESG Analyzer - Comprehensive ESG Analysis Platform
+# ESG Analyzer - Comprehensive ESG Analysis Platform (Work in Progress)
 
 ## 📌 Overview
 ESG Analyzer is a comprehensive tool designed to analyze Environmental, Social, and Governance (ESG) reports, compare them with external data sources, assess sentiment, and predict future ESG trends.
@@ -84,7 +84,7 @@ ESG-Analyzer/
 ## 🔧 Setup & Installation
 ### 1️⃣ Clone the Repository
 ```sh
-git clone https://github.com/yourrepo/esg-analyzer.git
+git clone https://github.com/wanazhar/ESGAnalyzer.git
 cd esg-analyzer
 ```
 ### 2️⃣ Install Backend Dependencies
