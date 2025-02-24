@@ -1,0 +1,14 @@
+{
+    "Environmental": {
+        "Carbon Footprint": ["carbon emissions", "CO2 emissions", "greenhouse gas"],
+        "Water Usage": ["water consumption", "water waste", "sustainability water"]
+    },
+    "Social": {
+        "Diversity & Inclusion": ["gender equality", "workplace diversity", "social impact"],
+        "Labor Rights": ["fair wages", "working conditions", "child labor"]
+    },
+    "Governance": {
+        "Corporate Ethics": ["anti-corruption", "ethical business", "board transparency"],
+        "Shareholder Rights": ["investor protection", "voting rights", "corporate governance"]
+    }
+}
