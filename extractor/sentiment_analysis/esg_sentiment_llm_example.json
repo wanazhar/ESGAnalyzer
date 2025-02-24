@@ -1,0 +1,10 @@
+{
+    "https://www.example.com/article1": {
+        "traditional_sentiment": "negative",
+        "llm_sentiment": "Sentiment: Negative\nESG Category: Governance\nSummary: The company is under investigation for financial fraud."
+    },
+    "https://www.example.com/article2": {
+        "traditional_sentiment": "positive",
+        "llm_sentiment": "Sentiment: Positive\nESG Category: Environmental\nSummary: The company has reduced carbon emissions by 40%, setting a new industry standard."
+    }
+}

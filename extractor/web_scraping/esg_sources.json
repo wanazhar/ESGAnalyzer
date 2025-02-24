@@ -1,0 +1,11 @@
+{
+    "news_sources": [
+        "https://www.reuters.com/business/sustainable-business/",
+        "https://www.bloomberg.com/impact",
+        "https://www.esgtoday.com/"
+    ],
+    "company_sources": [
+        "https://www.tesla.com/impact",
+        "https://www.microsoft.com/en-us/corporate-responsibility/sustainability"
+    ]
+}

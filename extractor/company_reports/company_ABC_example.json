@@ -1,0 +1,9 @@
+{
+    "company_name": "Company ABC",
+    "year": 2024,
+    "ESG_claims": {
+        "Environmental": "We have reduced carbon emissions by 40%.",
+        "Social": "We are committed to fair labor practices.",
+        "Governance": "Our board ensures the highest level of transparency."
+    }
+}

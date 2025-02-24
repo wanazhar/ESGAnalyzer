@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ESG Sentiment Analysis</title>
+</head>
+<body>
+    <h1>🌱 ESG Sentiment Analysis</h1>
+    <textarea id="inputText" placeholder="Enter ESG text..."></textarea>
+    
+    <label>Select AI Model:</label>
+    <select id="aiProvider">
+        <option value="openai">OpenAI (GPT-4)</option>
+        <option value="anthropic">Anthropic (Claude-2)</option>
+        <option value="cohere">Cohere (Command-R)</option>
+    </select>
+
+    <button onclick="analyzeSentiment()">Analyze</button>
+
+    <h3>Sentiment Output:</h3>
+    <p id="sentimentResult">🔍 Waiting for analysis...</p>
+
+    <script>
+        function analyzeSentiment() {
+            let text = document.getElementById("inputText").value;
+            let provider = document.getElementById("aiProvider").value;
+
+            fetch("/analyze", {
+                method: "POST",
+                headers: {"Content-Type": "application/json"},
+                body: JSON.stringify({text, provider})
+            })
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById("sentimentResult").innerText = "📊 " + data.sentiment;
+            });
+        }
+    </script>
+</body>
+<head>
+    <title>ESG Trends</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="{{ url_for('static', filename='esg_chart.js') }}"></script>
+</head>
+<body>
+    <h1>🌱 ESG Trend Visualization</h1>
+
+    <label for="yearFilter">Select Year:</label>
+    <select id="yearFilter" onchange="renderChart()">
+        <option value="2020">2020</option>
+        <option value="2021">2021</option>
+        <option value="2022">2022</option>
+        <option value="2023">2023</option>
+    </select>
+
+    <label for="companyFilter">Select Company:</label>
+    <select id="companyFilter" onchange="renderChart()">
+        <option value="all">All Companies</option>
+    </select>
+
+    <canvas id="CO2 Emissions"></canvas>
+    <canvas id="Water Usage"></canvas>
+    <canvas id="Diversity Score"></canvas>
+</body>
+</html>

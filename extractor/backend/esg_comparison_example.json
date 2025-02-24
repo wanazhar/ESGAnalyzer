@@ -1,0 +1,13 @@
+{
+    "Company A": {
+      "contradictions": [
+        {
+          "category": "Environmental",
+          "company_claim": "We use 100% renewable energy.",
+          "external_sentiment": "Some reports indicate partial fossil fuel use.",
+          "llm_opinion": "Reliability Score: Medium\nThe claim is not fully backed by external sources."
+        }
+      ]
+    }
+  }
+  

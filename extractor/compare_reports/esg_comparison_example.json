@@ -1,0 +1,18 @@
+{
+    "Company ABC": {
+        "claims": {
+            "Environmental": "We have reduced carbon emissions by 40%.",
+            "Social": "We are committed to fair labor practices.",
+            "Governance": "Our board ensures the highest level of transparency."
+        },
+        "contradictions": [
+            {
+                "category": "Environmental",
+                "company_claim": "We have reduced carbon emissions by 40%.",
+                "external_sentiment": "Sentiment: Negative\nESG Category: Environmental\nSummary: The company is under investigation for illegal pollution.",
+                "news_source": "https://www.example.com/article1",
+                "llm_opinion": "Reliability Score: Low\nExplanation: The company claims a 40% reduction in carbon emissions, but independent news sources report ongoing pollution investigations. This indicates potential greenwashing."
+            }
+        ]
+    }
+}
