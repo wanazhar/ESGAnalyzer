@@ -85,7 +85,7 @@ ESG-Analyzer/
 ### 1️⃣ Clone the Repository
 ```sh
 git clone https://github.com/wanazhar/ESGAnalyzer.git
-cd esg-analyzer
+cd ESGAnalyzer
 ```
 ### 2️⃣ Install Backend Dependencies
 ```sh
