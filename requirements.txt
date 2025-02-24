@@ -1,0 +1,10 @@
+flask
+nltk
+joblib
+scikit-learn
+pandas
+recharts
+next
+react
+shadcn-ui
+tailwindcss
