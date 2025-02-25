@@ -1,14 +1,39 @@
-import scripts.extract_text
-import scripts.classify_esg
-import scripts.store_data
+"""
+ESG Analyzer - Data Extraction Pipeline
+This script runs the complete ESG data extraction and analysis pipeline
+"""
+import sys
+import os
 
-print("📥 Extracting text from PDFs...")
-scripts.extract_text.process_all_pdfs()
+# Add parent directory to path to allow imports
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-print("🔍 Classifying ESG content...")
-scripts.classify_esg.process_all_extracted_texts()
+try:
+    from extractor.scripts import extract_text
+    from extractor.scripts import classify_esg
+    from extractor.scripts import store_data
+except ImportError as e:
+    print(f"Error importing required modules: {str(e)}")
+    print("Make sure all required packages are installed and the directory structure is correct")
+    sys.exit(1)
 
-print("💾 Storing ESG data in the database...")
-scripts.store_data.store_data()
+def run_pipeline():
+    """Run the complete ESG data extraction and analysis pipeline"""
+    try:
+        print("📥 Extracting text from PDFs...")
+        extract_text.process_all_pdfs()
+        
+        print("🔍 Classifying ESG content...")
+        classify_esg.process_all_extracted_texts()
+        
+        print("💾 Storing ESG data in the database...")
+        store_data.store_data()
+        
+        print("✅ ESG Analysis Pipeline Completed!")
+        return True
+    except Exception as e:
+        print(f"❌ Error in ESG Analysis Pipeline: {str(e)}")
+        return False
 
-print("✅ ESG Analysis Pipeline Completed!")
+if __name__ == "__main__":
+    run_pipeline()
